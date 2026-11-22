@@ -1,0 +1,56 @@
+{
+ "source": "fuentes/Gaia_EDR3_flux_cartesian_4k.png",
+ "source_size": [
+  4000,
+  2000
+ ],
+ "credit": "ESA/Gaia/DPAC; CC BY-SA 3.0 IGO. Acknowledgement: A. Moitinho.",
+ "license": "CC BY-SA 3.0 IGO",
+ "url": "https://sci.esa.int/web/gaia/-/the-colour-of-the-sky-from-gaia-s-early-data-release-3-equirectangular-projection",
+ "process": {
+  "version": 2,
+  "yaw_deg": -159,
+  "tilt_deg": 35,
+  "black_point": 30.0,
+  "gamma": 1.25,
+  "star_k": 3.2,
+  "star_gain": 1.6,
+  "star_glow": 1.0,
+  "star_px": 0.7,
+  "bg_sigma_px": 1.6,
+  "stars": 118513,
+  "webp_q": [
+   92,
+   92
+  ],
+  "tool": "visuales/tools/procesar_gaia.py"
+ },
+ "palette": [
+  [
+   0.022,
+   0.044,
+   0.058
+  ],
+  [
+   0.153,
+   0.176,
+   0.192
+  ],
+  [
+   0.371,
+   0.344,
+   0.345
+  ],
+  [
+   0.744,
+   0.601,
+   0.54
+  ]
+ ],
+ "palette_weight": [
+  0.558,
+  0.249,
+  0.144,
+  0.048
+ ]
+}
