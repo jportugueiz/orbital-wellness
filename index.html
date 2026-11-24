@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<style>html.orb-cubre::after{content:"ORBITAL";position:fixed;inset:0;z-index:2147483647;display:flex;align-items:center;justify-content:center;font:300 34px/1 system-ui,sans-serif;letter-spacing:.45em;color:#7fe9f0;background:radial-gradient(circle at 50% 40%,#1e1036 0%,#0a0718 55%,#030306 100%)}</style><script>/* 24 nov (Jorge): no mostrar pantallas antiguas mientras carga; se quita cuando la portada o la consola están listas */document.documentElement.classList.add("orb-cubre");setTimeout(()=>document.documentElement.classList.remove("orb-cubre"),20000);</script>
 <script>window.ORB_APP="wellness";window.ORB_OTRA_APP="https://jportugueiz.github.io/orbital-dj/";(()=>{try{const u=new URL(location.href);let c=0;for(const k of ["dj","orbitaldj"])if(u.searchParams.has(k)){u.searchParams.delete(k);c=1}if(c)history.replaceState(history.state,"",u.href)}catch(_){}})();</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -34206,6 +34207,7 @@ const ORB_APPS=(()=>{
         E("div",{class:"oapp-hero"},logo,E("h1",{},"ORBITAL ",E("em",{},"DJ")),E("p",{class:"oapp-sub"},"DJ espacial 3D por instrumento"),hp),
         E("div",{class:"oapp-cards oapp-one"},card("dj","Abrir la consola","El DJ espacial 3D por instrumento.","01","DJ · DJ 8D")),specs));
   document.body.append(home);
+  document.documentElement.classList.remove("orb-cubre");
   // en la portada, la barra espaciadora no debe arrancar nada que esté detrás
   const onTop=()=>{const x=document.elementFromPoint(innerWidth/2,innerHeight/2);return !!(x&&x.closest("#oappHome"))};
   addEventListener("keydown",e=>{if(e.code==="Space"&&onTop()&&!/INPUT|TEXTAREA|SELECT|BUTTON/.test(e.target.tagName))e.stopImmediatePropagation()},true);
